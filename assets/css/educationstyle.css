@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+hr{
+ border-style: dotted none none none;
+ color: black;
+ border-width: 3px;
+ width: 700px;
+}
+
+nav{
+  background-color: #0C0547;
+  display: block;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+  background-color: red;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  border-right: 1px solid #09023b;
+  border-left: 1px solid #22148c;
+}
+
+nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #89C2FB;
+  background-color: #12085e;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+nav ul li.active a, nav ul a:hover {
+  background-color: orange;
+  color: #FFFFFF;
+}
+
+img { 
+  width:350px;
+  height:250px;
+  object-fit:cover;
+  border-radius: 10%; 
+}
+  .circular--image:hover { 
+    transform: scale(1.1); 
+    }
+
+    div#page_area {
+      display: grid;
+      place-items:center;
+     }
+html{
+  font-family: 'Trirong', serif ;
+  background-color: #89C2FB;
+  font-style: normal;
+}
