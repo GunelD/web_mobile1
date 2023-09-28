@@ -23,7 +23,6 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  background-color:#09023b;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
