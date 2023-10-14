@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Trirong');
-hr{
- border-style: dotted none none none;
- color: black;
- border-width: 3px;
- width: 700px;
-}
 
 nav{
   background-color: #0C0547;
@@ -39,7 +33,7 @@ nav ul li a {
   background-color: #12085e;
   width: 100%;
   display: block;
-  padding: 10px 0;
+  padding: 20px 0;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
 }
@@ -48,16 +42,6 @@ nav ul li.active a, nav ul a:hover {
   background-color: orange;
   color: #FFFFFF;
 }
-
-.circular--image { 
-  width:200px;
-  height:200px;
-  object-fit:cover;
-  border-radius: 50%; 
-}
-  .circular--image:hover { 
-    transform: scale(1.1); 
-    }
 
     div#page_area {
         width: 90%;
