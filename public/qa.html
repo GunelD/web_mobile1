@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+    <link rel="stylesheet" href="../assets/css/qa.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Questionnaire</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon_form.ico">
 </head>
 <body>
-    
-    <form>
-    Firstname:
-        <label for="fname">Firstname:</label>
-        <input type="text" id="fname" required placeholder="Enter first name"><br>
-
-    Lastname
-        <label for="lname">Lastname:</label>
-        <input type="text" id="lname" required placeholder="Enter last name"><br>
-
-        <fieldset>
+    <div id="page_area5">
+    <h1>Welcome to My Questionnaire!</h1>
+    <form action="MAILTO:gdibirova14113@ada.edu.az" method="post">
+        <label for="fname">Your Firstname:</label><br>
+        <br>
+        <input type="text" id="fname" required placeholder="Please enter first name"><br>
+    <br>
+        <label for="lname">Your Lastname:</label><br>
+        <br>
+        <input type="text" id="lname" required placeholder="Please enter last name"><br>
+    <br>
+    <label>Your Birthday:</label><br>
+    <br>
+    <label for="datemax">Enter a date before 2010-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="2009-12-31"><br>
+    <br>
+    <label for="email">Your email address:</label><br>
+    <br>
+    <input type="email" id="email" name="email" placeholder="Please enter email"><br>
+    <br>
+        <fieldset style="width:400px;">
+        <legend>Your Gender</legend>
         <input type="radio" name="gender" id="gender_male" value="MALE"/> <label for="gender_male"> Male</label><br>
         <input type="radio" name="gender" id="gender_female"  value="FEMALE"/> <label for="gender_female"> Female</label><br>
         <input type="radio" name="gender" id="gender_other"  value="OTHER"/> <label for="gender_other"> Other</label><br>
      </fieldset>
-
-     <fieldset>
-        <legend>Which programming language do you know</legend>
-        <input type="checkbox" name="lang" id="lang_java"  value="JAVA"/> <label for="lang_java"> Java</label><br>
-        <input type="checkbox" name="lang" id="lang_python"  value="PYTHON"/> <label for="lang_python"> Python</label><br>
-        <input type="checkbox" name="lang" id="lang_"  value="JAVA"/> <label for="lang_java"> Java</label><br>
+    <br>
+     <fieldset style="width:400px;">
+        <legend>Did you like my Website?</legend>
+        <input type="radio" namE="like" id="like_yes" value="YES" /> <label for="like_yes"> Yes</label><br>
+        <input type="radio" name="like" id="like_no" value="NO" /> <label for="like_no"> No</label><br>
      </fieldset>
+    <br>
+     <fieldset style="width:400px;">
+        <legend>What did you like the most?</legend>
+        <input type="checkbox" name="fav_part" id="fav_part_content"  value="CONTENT"/> <label for="fav_part_content"> Content</label><br>
+        <input type="checkbox" name="fav_part" id="fav_part_photos"  value="PHOTOS"/> <label for="fam_part_photos"> Photos</label><br>
+        <input type="checkbox" name="fav_part" id="fav_part_design"  value="DESIGN"/> <label for="fav_part_design"> Design</label><br>
+     </fieldset>
+     <br>
+     <label for="suggestions">Your Suggestions:</label><br>
+        <br>
+        <input type="text" id="suggests" required placeholder="Please leave your suggestions to improve my website"
+         style="height:100px; width:420px;"><br>
+         <br>
+     <input type="submit" value="Submit" />
+     <input type="reset" value="Reset">
     </form>
+    </div>
 </body>
 </html>

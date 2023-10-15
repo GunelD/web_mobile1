@@ -43,7 +43,7 @@ nav ul li.active a, nav ul a:hover {
   color: #FFFFFF;
 }
 
-    div#page_area {
+    div#page_area3 {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -59,12 +59,12 @@ html{
 th{
   background-color: #22148c;
 }
-img{
+.cont_info{
     block-size: 200px;
     border-radius: 30px;
     width:200px;
     height:200px;
 }
-img:hover { 
+.cont_info:hover { 
     transform: scale(1.1); 
     }
